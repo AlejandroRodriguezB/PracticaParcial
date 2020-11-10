@@ -10,5 +10,5 @@ package model.users;
  * @author alumno
  */
 public class Arbitro {
-    
+    private int partidasEvaluadas;
 }

@@ -10,5 +10,8 @@ package model.users;
  * @author alumno
  */
 public class Jugador {
+    private int partidasJugadas;
+    private int partidasGanadas;
+    private int partidasNoFinalizadas;
     
 }

@@ -3,12 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/view/CellDrawable.java</file>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/view/ChessBoardPanel.java</file>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/view/ChessBoardWindow.java</file>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/practicaparcial/PracticaParcial.java</file>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/view/Casella.java</file>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/PracticaParcial/src/view/UsersWindow.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Pieza.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/utils/PositionCode.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/users/Arbitro.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/users/Jugador.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Dama.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Torre.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Alfil.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/practicaparcial/DataLoader.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/practicaparcial/PracticaParcial.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/repository/UsersRepository.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Peon.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Rey.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/users/User.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/view/ChessBoardPanel.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/game/EstatTauler.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/utils/CSVReader.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/view/Casella.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/view/ChessBoardWindow.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/view/CellDrawable.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/users/Socio.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/chesspieces/Caballo.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/model/game/Partida.java</file>
+            <file>file:/C:/Users/alumno/Downloads/PracticaParcial/src/view/UsersWindow.java</file>
         </group>
     </open-files>
 </project-private>
