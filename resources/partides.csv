@@ -1,0 +1,21 @@
+nPartida,jugador1,jugador2,arbitre,tauler
+1,7,13,3,A7-rook-0 A8-kight-0 D7-pawnn-1 F1-kight-0 E4-king-1 B6-queen-0 E6-king-1 E1-bishop-1
+2,8,10,2,D2-kight-1 H3-rook-0 A8-queen-1 B8-king-0 G5-rook-1 D6-king-0 A4-king-0 A1-kight-0 B2-rook-0 E6-kight-0 G6-queen-0 H2-kight-1
+3,15,4,3,C1-kight-1 B3-rook-0
+4,13,9,3,C2-queen-1 C1-bishop-1 H5-pawnn-0 D7-kight-1 B5-bishop-1 B3-king-1 D4-queen-1 G7-bishop-0 B4-king-0
+5,8,8,1,C7-queen-0
+6,11,5,3,H7-queen-1 C4-kight-1
+7,7,10,3,E7-bishop-1 D6-queen-1 C4-kight-1 F6-queen-1 D2-pawnn-1
+8,16,17,2,F8-bishop-1 D4-pawnn-1 A2-kight-1 E2-kight-1 G4-bishop-1 C3-queen-0 D2-bishop-1 G8-bishop-1 G2-pawnn-0 D5-rook-0 A7-rook-0
+9,8,13,2,F2-rook-0 G6-kight-1 H6-bishop-0
+10,17,7,2,D6-bishop-0 D2-king-1 E6-rook-0 B3-king-0
+11,13,15,2,A8-pawnn-1 G2-king-0 C4-kight-0 E2-rook-1 H8-kight-1 E4-queen-1 D5-kight-0
+12,8,8,2,F2-rook-1 E3-kight-0 D4-king-0 G6-rook-0 A8-bishop-0 G4-pawnn-0 E8-king-0 F3-bishop-1 E7-queen-0
+13,5,9,2,E7-bishop-0 C8-queen-1 E8-kight-1 B8-kight-1 A2-queen-1 H7-king-0
+14,7,14,3,B7-pawnn-0 C4-bishop-0 F1-pawnn-0 E1-king-1 E5-king-1 E4-kight-1
+15,11,13,1,A7-queen-1 C2-bishop-0 G8-bishop-1 A4-queen-1 D7-kight-1 C1-kight-1 F6-pawnn-0 G2-kight-0
+16,4,4,1,E6-queen-0 C8-kight-0
+17,9,8,3,C6-king-0 A3-king-0 D5-rook-0 B8-bishop-0 D2-kight-0 D3-rook-0 C8-king-0
+18,17,4,3,C5-queen-0 C2-king-1 F8-pawnn-1 G7-pawnn-1 H4-queen-1
+19,8,17,2,G8-king-0 G6-king-1 F7-queen-1 A4-bishop-0 F2-kight-0 H2-queen-0 C1-pawnn-1 D3-bishop-1 F1-pawnn-0 C8-kight-1 A8-bishop-0 C4-kight-1
+20,15,11,1,B5-bishop-0 B6-queen-1 C8-queen-0 A5-pawnn-0 E1-pawnn-0 F3-king-1 E6-kight-0 G5-pawnn-1 D2-kight-1 A8-king-1 F1-bishop-0 H1-queen-1
