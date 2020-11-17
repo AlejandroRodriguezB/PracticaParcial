@@ -2,9 +2,11 @@ package practicaparcial;
 
 import java.util.ArrayList;
 import java.util.List;
+import model.game.EstatTauler;
 import model.game.Partida;
 import model.users.User;
 import repository.UsersRepository;
+import repository.UsersRepositoryImpl;
 import view.UsersWindow;
 
 /**
@@ -35,6 +37,9 @@ public class PracticaParcial {
         List<DataLoader.GameData> gamesData = DataLoader.gamesLoader();
         for (DataLoader.GameData gameData : gamesData) {
             // TODO: Codi per emplenar la llista de partides
+            EstatTauler et= new EstatTauler(gameData.tauler);
+            Partida u = new Partida(gameData.idPartida,gameData.jugador1,gameData.jugador2,gameData.arbitre,et);
+            partides.add(u);
         }
 
         return partides;
@@ -45,14 +50,16 @@ public class PracticaParcial {
         List<DataLoader.UserData> usersData = DataLoader.usersLoader();
         for (DataLoader.UserData userData : usersData) {
             // TODO: Codi per emplenar la llista d'usuaris
+            User u = new User(userData.nom,userData.llinatges,userData.id,userData.numAccessos,userData.correuElectronic,userData.tipus);
+            users.add(u);
         }
-
         // TODO: Contruir i retornar l'objecte amb el repository
-        return null;
+        UsersRepositoryImpl impl = new UsersRepositoryImpl(users);
+        return impl;
     }
 
     public static void main(String[] args) throws Exception {
-        PracticaParcial m = new PracticaParcial();
+        PracticaParcial m = new PracticaParcial();      
         m.run();
     }
 

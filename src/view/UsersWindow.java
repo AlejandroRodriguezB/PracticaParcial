@@ -83,9 +83,27 @@ public class UsersWindow extends javax.swing.JFrame {
         public Object getValueAt(final int rowIndex, final int columnIndex) {
             User user = users.findAll().get(rowIndex);
             // TODO: implement it
-            return null;
+            Object o = new Object();
+            switch (columnIndex) {
+                case 0:
+                    o=user.getId();
+                    break;
+                case 1:
+                    o=user.getNombre();
+                    break;
+                case 2:
+                    o=user.getCorreuElectronic();
+                    break;
+                case 3:
+                    o=user.getTipoUser();
+                    break;
+                case 4:                
+                    o=jButton1; //editar ta mal
+                    break;
+            }
+            return o;
         }
-        
+
     }
 
     /**

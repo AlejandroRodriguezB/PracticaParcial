@@ -9,7 +9,19 @@ package model.game;
  * @author Bernat Galmés Rubert
  */
 public class EstatTauler {
- 
+    private String tauler;
+
+    public String getTauler() {
+        return tauler;
+    }
+
+    public void setTauler(String tauler) {
+        this.tauler = tauler;
+    }
+
+    public EstatTauler(String tauler) {
+        this.tauler = tauler;
+    }
     
     
 }

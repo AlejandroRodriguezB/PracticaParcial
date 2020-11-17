@@ -10,6 +10,21 @@ package model.game;
  * @author Bernat Galmés Rubert
  */
 public class Partida {
-    private EstatTauler estatActual;
+
+    private long idPartida;
+    private long jugador1;
+    private long jugador2;
+    private long arbitre;
+    private EstatTauler tauler;
+    
+    public Partida(long idPartida, long jugador1, long jugador2, long arbitre, EstatTauler tauler) {
+        this.idPartida = idPartida;
+        this.jugador1 = jugador1;
+        this.jugador2 = jugador2;
+        this.arbitre = arbitre;
+        this.tauler = tauler;
+    }
+    
+    
 
 }
