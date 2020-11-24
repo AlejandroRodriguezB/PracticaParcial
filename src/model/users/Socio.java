@@ -7,8 +7,13 @@ package model.users;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public class Socio {
+public class Socio extends TipoUser {
+
+    @Override
+    public String toString() {
+        return "Socio";
+    }
     
 }

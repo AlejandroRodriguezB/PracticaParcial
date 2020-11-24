@@ -5,10 +5,12 @@
  */
 package model.chesspieces;
 
+import view.CellDrawable;
+
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public abstract class Pieza {
+public abstract class Pieza implements CellDrawable{
     
 }

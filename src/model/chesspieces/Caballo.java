@@ -7,13 +7,13 @@ package model.chesspieces;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import view.CellDrawable;
+
 
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public class Caballo extends Pieza implements CellDrawable{
+public class Caballo extends Pieza{
 
     @Override
     public Image FiguraFBlanc() {

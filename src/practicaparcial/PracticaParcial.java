@@ -38,7 +38,7 @@ public class PracticaParcial {
         for (DataLoader.GameData gameData : gamesData) {
             // TODO: Codi per emplenar la llista de partides
             EstatTauler et= new EstatTauler(gameData.tauler);
-            Partida u = new Partida(gameData.idPartida,gameData.jugador1,gameData.jugador2,gameData.arbitre,et);
+            Partida u = new Partida(gameData.idPartida,users.findOne(gameData.jugador1),users.findOne(gameData.jugador2),gameData.arbitre,et);
             partides.add(u);
         }
 
@@ -59,7 +59,7 @@ public class PracticaParcial {
     }
 
     public static void main(String[] args) throws Exception {
-        PracticaParcial m = new PracticaParcial();      
+        PracticaParcial m = new PracticaParcial();  
         m.run();
     }
 

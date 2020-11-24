@@ -1,5 +1,7 @@
 package model.game;
 
+import model.users.User;
+
 
 /**
  * Classe que representa una partida del joc.
@@ -12,12 +14,12 @@ package model.game;
 public class Partida {
 
     private long idPartida;
-    private long jugador1;
-    private long jugador2;
+    private User jugador1;
+    private User jugador2;
     private long arbitre;
     private EstatTauler tauler;
     
-    public Partida(long idPartida, long jugador1, long jugador2, long arbitre, EstatTauler tauler) {
+    public Partida(long idPartida, User jugador1, User jugador2, long arbitre, EstatTauler tauler) {
         this.idPartida = idPartida;
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;

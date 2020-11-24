@@ -11,9 +11,9 @@ import view.CellDrawable;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public class Rey extends Pieza implements CellDrawable{
+public class Rey extends Pieza {
 
     @Override
     public Image FiguraFBlanc() {

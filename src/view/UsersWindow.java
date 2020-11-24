@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableCellRenderer;
+import model.users.Jugador;
 import model.users.User;
 import repository.UsersRepository;
 
@@ -97,8 +98,15 @@ public class UsersWindow extends javax.swing.JFrame {
                 case 3:
                     o=user.getTipoUser();
                     break;
-                case 4:                
-                    o=jButton1; //editar ta mal
+                case 4:
+                    if(user.getTipoUser().getClass()== Jugador.class){
+                        o= new JButton("botó"); //editar ta mal creo
+                        
+                    }
+                    else{
+                        o= new JButton("deshabilitado");  
+                    }
+                    
                     break;
             }
             return o;

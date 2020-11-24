@@ -10,18 +10,25 @@ package model.game;
  */
 public class EstatTauler {
     private String tauler;
+    private String[] partes;
 
     public String getTauler() {
         return tauler;
     }
 
-    public void setTauler(String tauler) {
-        this.tauler = tauler;
+    public String[] getPartes() {
+        return partes;
     }
 
     public EstatTauler(String tauler) {
         this.tauler = tauler;
     }
     
+    public void separa(){
+        partes=tauler.split(" ");
+        for(int i =0; partes[i]!=null;i++){
+            
+        }
+    }
     
 }

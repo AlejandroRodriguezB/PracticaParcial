@@ -7,8 +7,12 @@ package model.users;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public class Arbitro {
+public class Arbitro extends TipoUser{
     private int partidasEvaluadas;
+    @Override
+    public String toString() {
+        return "Arbitro";
+    }
 }

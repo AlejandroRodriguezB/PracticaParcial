@@ -9,14 +9,6 @@ package model.users;
  *
  * @author Alejandro Rodriguez Bañón
  */
-public class Jugador extends TipoUser {
-    private int partidasJugadas;
-    private int partidasGanadas;
-    private int partidasNoFinalizadas;
-    
-    @Override
-    public String toString() {
-        return "Jugador";
-    }
+public abstract class TipoUser {
     
 }

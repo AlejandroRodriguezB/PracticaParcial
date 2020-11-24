@@ -10,19 +10,23 @@ import model.users.User;
 
 /**
  *
- * @author alumno
+ * @author Alejandro Rodriguez Bañón
  */
-public class UsersRepositoryImpl implements UsersRepository {
 
-    private List<User> array;
+public class UsersRepositoryImpl implements UsersRepository {
+    private List<User> array; 
 
     public UsersRepositoryImpl(List<User> array) {
         this.array = array;
     }
     
     @Override
-    public User findOne(long id) throws NotFoundException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public User findOne(long id) {
+        int i=0 ;
+        while (array.get(i).getId()!= id && array.get(i)!= null){
+            i++;
+        }
+        return array.get(i);
     }
 
     @Override
@@ -32,6 +36,10 @@ public class UsersRepositoryImpl implements UsersRepository {
 
     @Override
     public float[] meanAccessByClass() {
+        
+        int meanA=0;
+        int meanS=0;
+        int meanJ=0;
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
