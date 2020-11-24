@@ -26,9 +26,9 @@ public class EstatTauler {
     
     public void separa(){
         partes=tauler.split(" ");
-        for(int i =0; partes[i]!=null;i++){
-            
-        }
+//        for(int i =0; partes[i]!=null;i++){
+//            
+//        }
     }
     
 }
