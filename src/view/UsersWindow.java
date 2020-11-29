@@ -138,11 +138,12 @@ public class UsersWindow extends javax.swing.JFrame {
                 
                 if (value instanceof JButton) {
                     /*perform a click event*/
-//                      users.findAll().get(row); // TODO: consulta usuari seleccionar, adaptar a la teva implementació
+                    User user =  users.findAll().get(row); // TODO: consulta usuari seleccionar, adaptar a la teva implementació
                     java.awt.EventQueue.invokeLater(new Runnable() {
                         @Override
                         public void run() {
                             // TODO: implement it
+                            //chessWindow.putTextAreaText(text);
                         }
                     });
                 }

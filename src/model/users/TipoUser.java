@@ -11,4 +11,10 @@ package model.users;
  */
 public abstract class TipoUser {
     
+    private int partidasGanadas;
+
+    public int getPartidasGanadas() {
+        return partidasGanadas;
+    }
+
 }

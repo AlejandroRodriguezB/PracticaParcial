@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
  * @author Alejandro Rodriguez Bañón
  */
 public class Peon extends Pieza{
-
+    
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Gat.gif").getImage();  

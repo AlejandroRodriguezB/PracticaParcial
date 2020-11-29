@@ -1,5 +1,8 @@
 package model.game;
 
+import model.chesspieces.Alfil;
+import model.chesspieces.Pieza;
+
 /**
  * Representació de l'estat d'un tauler d'escacs en un instant donat.
  * 
@@ -11,7 +14,8 @@ package model.game;
 public class EstatTauler {
     private String tauler;
     private String[] partes;
-
+    Pieza pie = new Alfil();
+    
     public String getTauler() {
         return tauler;
     }
