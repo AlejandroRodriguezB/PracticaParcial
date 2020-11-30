@@ -102,6 +102,7 @@ public class UsersWindow extends javax.swing.JFrame {
                     if(user.getTipoUser().getClass()== Jugador.class){
                         o= new JButton("botó"); //editar ta mal creo
                         
+                        
                     }
                     else{
                         o= new JButton("deshabilitado");  
@@ -143,7 +144,16 @@ public class UsersWindow extends javax.swing.JFrame {
                         @Override
                         public void run() {
                             // TODO: implement it
-                            //chessWindow.putTextAreaText(text);
+                             if(user.getTipoUser().getClass()== Jugador.class && user.getTipoUser().getGames().size()>0){
+                                chessWindow.reset();
+                                
+                                chessWindow.putTextAreaText("hola");
+                                chessWindow.colocaPeces(user.getTipoUser().getGames().get(0).getTauler().generaLlistaPeces());
+                                 System.out.println(user.getTipoUser().getGames().get(0).getIdPartida());
+                                chessWindow.setVisible(true);
+                                
+                                
+                             }
                         }
                     });
                 }

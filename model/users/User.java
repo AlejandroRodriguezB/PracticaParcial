@@ -1,7 +1,5 @@
 package model.users;
 
-import java.util.UUID;
-
 /**
  * Classe que representa un usuari de l'aplicació.
  * 
@@ -15,6 +13,7 @@ public class User {
     private String correuElectronic;
     private long id;
     private long accesos;
+    
     
     
     public User(String nombre, String apellido, long id, long accesos,String correuElectronic,String tipoUser) {
@@ -87,6 +86,10 @@ public class User {
             default:
                 return null;
         }
+    }
+    @Override
+    public String toString() {
+        return "User{" + "nombre=" + nombre + ", apellido=" + apellido + ", tipoUser=" + tipoUser + ", id=" + id + '}';
     }
     
     

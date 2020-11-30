@@ -5,6 +5,10 @@
  */
 package model.users;
 
+import java.util.ArrayList;
+import java.util.List;
+import model.game.Partida;
+
 /**
  *
  * @author Alejandro Rodriguez Bañón
@@ -14,6 +18,15 @@ public class Jugador extends TipoUser {
     private int partidasJugadas;
     private int partidasGanadas;
     private int partidasNoFinalizadas;
+    private List<Partida> games = new ArrayList<Partida>();
+
+    public List<Partida> getGames() {
+        return games;
+    }
+
+    public void setGames(List<Partida> games) {
+        this.games = games;
+    }
     
     public int getPartidasJugadas() {
         return partidasJugadas;
@@ -37,6 +50,10 @@ public class Jugador extends TipoUser {
 
     public void setPartidasNoFinalizadas(int partidasNoFinalizadas) {
         this.partidasNoFinalizadas = partidasNoFinalizadas;
+    }
+    
+    public void addGame(Partida p){
+        games.add(p);
     }
     
     
