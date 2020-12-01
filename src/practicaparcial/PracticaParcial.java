@@ -39,8 +39,10 @@ public class PracticaParcial {
             // TODO: Codi per emplenar la llista de partides
             EstatTauler et= new EstatTauler(gameData.tauler);
             Partida u = new Partida(gameData.idPartida,users.findOne(gameData.jugador1),users.findOne(gameData.jugador2),gameData.arbitre,et);
-            System.out.println(gameData.tauler);
+            users.findOne(gameData.jugador1).getTipoUser().addGame(u);
+            users.findOne(gameData.jugador2).getTipoUser().addGame(u);
             partides.add(u);
+           
         }
 
         return partides;

@@ -5,6 +5,9 @@
  */
 package model.users;
 
+import java.util.List;
+import model.game.Partida;
+
 /**
  *
  * @author Alejandro Rodriguez Bañón
@@ -12,9 +15,18 @@ package model.users;
 public abstract class TipoUser {
     
     private int partidasGanadas;
+    private List<Partida> games;
+
+    public List<Partida> getGames() {
+        return games;
+    }
 
     public int getPartidasGanadas() {
         return partidasGanadas;
+    }
+    
+    public void addGame(Partida p){
+        games.add(p);
     }
 
 }

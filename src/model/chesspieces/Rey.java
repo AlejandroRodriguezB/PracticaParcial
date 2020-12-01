@@ -15,6 +15,9 @@ import view.CellDrawable;
  */
 public class Rey extends Pieza {
 
+    public Rey() {
+    }
+
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Rei.gif").getImage();  

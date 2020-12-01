@@ -14,6 +14,9 @@ import javax.swing.ImageIcon;
  */
 public class Alfil extends Pieza{
 
+    public Alfil() {
+    }
+
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Alfil.gif").getImage();       

@@ -14,6 +14,9 @@ import javax.swing.ImageIcon;
  */
 public class Torre extends Pieza {
 
+    public Torre() {
+    }
+
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Torre.gif").getImage();  

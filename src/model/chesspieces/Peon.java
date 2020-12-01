@@ -13,6 +13,9 @@ import javax.swing.ImageIcon;
  * @author Alejandro Rodriguez Bañón
  */
 public class Peon extends Pieza{
+
+    public Peon() {
+    }
     
     @Override
     public Image FiguraFBlanc() {

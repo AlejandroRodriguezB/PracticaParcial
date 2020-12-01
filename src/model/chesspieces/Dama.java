@@ -15,6 +15,9 @@ import javax.swing.ImageIcon;
  */
 public class Dama extends Pieza{
 
+    public Dama() {
+    }
+
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Reina.gif").getImage();  

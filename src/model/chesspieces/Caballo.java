@@ -15,6 +15,9 @@ import javax.swing.ImageIcon;
  */
 public class Caballo extends Pieza{
 
+    public Caballo() {
+    }
+
     @Override
     public Image FiguraFBlanc() {
         Image imagen = new ImageIcon("resources/imatges/Fons_Blanc/Cavall.gif").getImage();  
