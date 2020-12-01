@@ -9,20 +9,18 @@ public class User {
     
     private String nombre;
     private String apellido;
-    private TipoUser tipoUser;
     private String correuElectronic;
     private long id;
     private long accesos;
     
     
     
-    public User(String nombre, String apellido, long id, long accesos,String correuElectronic,String tipoUser) {
+    public User(String nombre, String apellido, long id, long accesos,String correuElectronic) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.id = id;
         this.accesos = accesos;
         this.correuElectronic=correuElectronic;
-        this.tipoUser=generaTipoUser(tipoUser);
     }
 
     public String getNombre() {
@@ -41,13 +39,6 @@ public class User {
         this.apellido = apellido;
     }
 
-    public TipoUser getTipoUser() {
-        return tipoUser;
-    }
-
-    public void setTipoUser(TipoUser tipoUser) {
-        this.tipoUser = tipoUser;
-    }
 
     public String getCorreuElectronic() {
         return correuElectronic;
@@ -73,23 +64,10 @@ public class User {
         this.accesos = accesos;
     }
     
-    public TipoUser generaTipoUser(String tipoUser) {
-        switch(tipoUser){
-            case "0":
-                return new Jugador();
-
-            case "1":
-                return new Socio();
-
-            case "2":
-                return new Arbitro();
-            default:
-                return null;
-        }
-    }
+    
     @Override
     public String toString() {
-        return "User{" + "nombre=" + nombre + ", apellido=" + apellido + ", tipoUser=" + tipoUser + ", id=" + id + '}';
+        return "User{" + "nombre=" + nombre + ", apellido=" + apellido  + ", id=" + id + '}';
     }
     
     

@@ -9,8 +9,12 @@ package model.users;
  *
  * @author Alejandro Rodriguez Bañón
  */
-public class Arbitro extends TipoUser{
+public class Arbitro extends User{
     private int partidasEvaluadas=0;
+
+    public Arbitro(String nombre, String apellido, long id, long accesos, String correuElectronic) {
+        super(nombre, apellido, id, accesos, correuElectronic);
+    }
 
     public void agregaPartidaEvaluada() {
         partidasEvaluadas++;

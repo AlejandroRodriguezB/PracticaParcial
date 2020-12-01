@@ -13,12 +13,16 @@ import model.game.Partida;
  *
  * @author Alejandro Rodriguez Bañón
  */
-public class Jugador extends TipoUser {
+public class Jugador extends User {
 
     private int partidasJugadas;
     private int partidasGanadas;
     private int partidasNoFinalizadas;
     private List<Partida> games = new ArrayList<Partida>();
+
+    public Jugador(String nombre, String apellido, long id, long accesos, String correuElectronic) {
+        super(nombre, apellido, id, accesos, correuElectronic);
+    }
 
     public List<Partida> getGames() {
         return games;

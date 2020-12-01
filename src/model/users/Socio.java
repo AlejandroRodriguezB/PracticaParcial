@@ -9,7 +9,11 @@ package model.users;
  *
  * @author Alejandro Rodriguez Bañón
  */
-public class Socio extends TipoUser {
+public class Socio extends User {
+
+    public Socio(String nombre, String apellido, long id, long accesos, String correuElectronic) {
+        super(nombre, apellido, id, accesos, correuElectronic);
+    }
 
     @Override
     public String toString() {

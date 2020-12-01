@@ -52,11 +52,11 @@ public class UsersRepositoryImpl implements UsersRepository {
         int j = 0;
         
         for (int i = 0; i<array.size(); i++) {
-            if (array.get(i).getTipoUser().getClass() == Arbitro.class) {
+            if (array.get(i).getClass() == Arbitro.class) {
                 totA = totA + array.get(i).getAccesos();
                 a++;
             }
-            if (array.get(i).getTipoUser().getClass() == Socio.class) {
+            if (array.get(i).getClass() == Socio.class) {
                 totS = totS + array.get(i).getAccesos();
                 s++;
             } else {
@@ -102,9 +102,10 @@ public class UsersRepositoryImpl implements UsersRepository {
         String name = "nadie";
         int max=-1;
         for (int i = 0; i<array.size(); i++) {
-            if (array.get(i).getTipoUser().getClass() == Jugador.class) {
-                if(array.get(i).getTipoUser().getPartidasGanadas()>max){
-                    max=array.get(i).getTipoUser().getPartidasGanadas();
+            if (array.get(i).getClass() == Jugador.class) {
+                Jugador j = (Jugador)array.get(i);
+                if(j.getPartidasGanadas()>max){
+                    max=j.getPartidasGanadas();
                     name=array.get(i).getNombre() + " " + array.get(i).getApellido();
                 }
             }

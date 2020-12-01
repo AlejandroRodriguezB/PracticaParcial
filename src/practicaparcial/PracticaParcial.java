@@ -5,6 +5,8 @@ import java.util.List;
 import model.game.EstatTauler;
 import model.game.Partida;
 import model.users.Arbitro;
+import model.users.Jugador;
+import model.users.Socio;
 import model.users.User;
 import repository.UsersRepository;
 import repository.UsersRepositoryImpl;
@@ -40,9 +42,12 @@ public class PracticaParcial {
             // TODO: Codi per emplenar la llista de partides
             EstatTauler et= new EstatTauler(gameData.tauler);
             Partida u = new Partida(gameData.idPartida,users.findOne(gameData.jugador1),users.findOne(gameData.jugador2),gameData.arbitre,et);
-            users.findOne(gameData.jugador1).getTipoUser().addGame(u);
-            users.findOne(gameData.jugador2).getTipoUser().addGame(u);
-            users.findOne(gameData.arbitre).getTipoUser().agregaPartidaEvaluada();
+            Jugador j = (Jugador)users.findOne(gameData.jugador1);
+            j.addGame(u);
+            j = (Jugador)users.findOne(gameData.jugador2);
+            j.addGame(u);
+            Arbitro a = (Arbitro)users.findOne(gameData.arbitre);
+            a.agregaPartidaEvaluada();
             partides.add(u);
            
         }
@@ -55,8 +60,23 @@ public class PracticaParcial {
         List<DataLoader.UserData> usersData = DataLoader.usersLoader();
         for (DataLoader.UserData userData : usersData) {
             // TODO: Codi per emplenar la llista d'usuaris
-            User u = new User(userData.nom,userData.llinatges,userData.id,userData.numAccessos,userData.correuElectronic,userData.tipus);
-            users.add(u);
+            switch(userData.tipus){
+            case "0":
+                Jugador u = new Jugador(userData.nom,userData.llinatges,userData.id,userData.numAccessos,userData.correuElectronic);
+                users.add(u);
+                break;
+
+            case "1":
+                Socio s = new Socio(userData.nom,userData.llinatges,userData.id,userData.numAccessos,userData.correuElectronic);
+                users.add(s);
+                break;
+
+            case "2":
+                Arbitro a = new Arbitro(userData.nom,userData.llinatges,userData.id,userData.numAccessos,userData.correuElectronic);
+                users.add(a);
+                break;
+        }
+            
         }
         // TODO: Contruir i retornar l'objecte amb el repository
         UsersRepositoryImpl impl = new UsersRepositoryImpl(users);

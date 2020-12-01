@@ -97,14 +97,14 @@ public class UsersWindow extends javax.swing.JFrame {
                     o=user.getCorreuElectronic();
                     break;
                 case 3:
-                    o=user.getTipoUser();
+                    o=user.getClass();
                     break;
                 case 4:
-                    if(user.getTipoUser().getClass()== Jugador.class){
+                    if(user.getClass()== Jugador.class){
                         o= new JButton("Partida"); //editar ta mal creo
  
                     }
-                    else if (user.getTipoUser().getClass()== Arbitro.class){
+                    else if (user.getClass()== Arbitro.class){
                         o= new JButton("Arbitraje");  
                     }
                     else{
@@ -147,20 +147,24 @@ public class UsersWindow extends javax.swing.JFrame {
                         @Override
                         public void run() {
                             // TODO: implement it
-                             if(user.getTipoUser().getClass()== Jugador.class && user.getTipoUser().getGames().size()>0){
+                             
+                             if(user.getClass()== Jugador.class ){
+                                Jugador j = (Jugador)user;
+                                if(j.getGames().size()>0){
                                 chessWindow.reset();
                                 
-                                chessWindow.putTextAreaText("hola");
-                                chessWindow.colocaPeces(user.getTipoUser().getGames().get(0).getTauler().generaLlistaPeces());
+                                chessWindow.putTextAreaText("Jugador: "+ user.getNombre()+ " "+ user.getApellido() +" \n El nombre de partides guanyades: 0 \n El nombre de partides no finalitzades: 0 \n Y el nombre de partides perdudes: 0");
+                                chessWindow.colocaPeces(j.getGames().get(0).getTauler().generaLlistaPeces());
                                 chessWindow.setVisible(true);   
+                                }
                              }
-                             else if(user.getTipoUser().getClass()== Arbitro.class){
-                                 int contador =user.getTipoUser().getPartidasEvaluadas();
-                                 
-                                 String text = "Nombre de partides arbitrades: " + contador;
-                                 
-                                 JOptionPane.showMessageDialog(rootPane, text);
-                            }
+//                             else if(user.getTipoUser().getClass()== Arbitro.class){
+//                                 int contador =user.getTipoUser().getPartidasEvaluadas();
+//                                 
+//                                 String text = "Nombre de partides arbitrades: " + contador;
+//                                 
+//                                 JOptionPane.showMessageDialog(rootPane, text);
+//                            }
                         }
                     });
                 }
