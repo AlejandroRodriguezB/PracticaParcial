@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.game.EstatTauler;
 import model.game.Partida;
+import model.users.Arbitro;
 import model.users.User;
 import repository.UsersRepository;
 import repository.UsersRepositoryImpl;
@@ -41,6 +42,7 @@ public class PracticaParcial {
             Partida u = new Partida(gameData.idPartida,users.findOne(gameData.jugador1),users.findOne(gameData.jugador2),gameData.arbitre,et);
             users.findOne(gameData.jugador1).getTipoUser().addGame(u);
             users.findOne(gameData.jugador2).getTipoUser().addGame(u);
+            users.findOne(gameData.arbitre).getTipoUser().agregaPartidaEvaluada();
             partides.add(u);
            
         }

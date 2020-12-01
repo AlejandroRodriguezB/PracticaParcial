@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableCellRenderer;
+import model.users.Arbitro;
 import model.users.Jugador;
 import model.users.User;
 import repository.UsersRepository;
@@ -100,9 +101,11 @@ public class UsersWindow extends javax.swing.JFrame {
                     break;
                 case 4:
                     if(user.getTipoUser().getClass()== Jugador.class){
-                        o= new JButton("botó"); //editar ta mal creo
-                        
-                        
+                        o= new JButton("Partida"); //editar ta mal creo
+ 
+                    }
+                    else if (user.getTipoUser().getClass()== Arbitro.class){
+                        o= new JButton("Arbitraje");  
                     }
                     else{
                         o= new JButton("deshabilitado");  
@@ -149,11 +152,15 @@ public class UsersWindow extends javax.swing.JFrame {
                                 
                                 chessWindow.putTextAreaText("hola");
                                 chessWindow.colocaPeces(user.getTipoUser().getGames().get(0).getTauler().generaLlistaPeces());
-                                 System.out.println(user.getTipoUser().getGames().get(0).getIdPartida());
-                                chessWindow.setVisible(true);
-                                
-                                
+                                chessWindow.setVisible(true);   
                              }
+                             else if(user.getTipoUser().getClass()== Arbitro.class){
+                                 int contador =user.getTipoUser().getPartidasEvaluadas();
+                                 
+                                 String text = "Nombre de partides arbitrades: " + contador;
+                                 
+                                 JOptionPane.showMessageDialog(rootPane, text);
+                            }
                         }
                     });
                 }

@@ -10,7 +10,20 @@ package model.users;
  * @author Alejandro Rodriguez Bañón
  */
 public class Arbitro extends TipoUser{
-    private int partidasEvaluadas;
+    private int partidasEvaluadas=0;
+
+    public void agregaPartidaEvaluada() {
+        partidasEvaluadas++;
+    }
+
+    public int getPartidasEvaluadas() {
+        return partidasEvaluadas;
+    }
+    
+    
+    public void setPartidasEvaluadas(int partidasEvaluadas) {
+        this.partidasEvaluadas = partidasEvaluadas;
+    }
     @Override
     public String toString() {
         return "Arbitro";

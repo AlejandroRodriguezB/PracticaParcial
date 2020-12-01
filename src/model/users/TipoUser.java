@@ -16,7 +16,16 @@ public abstract class TipoUser {
     
     private int partidasGanadas;
     private List<Partida> games;
+    private int partidasEvaluadas=0;
 
+    public void agregaPartidaEvaluada() {
+        partidasEvaluadas++;
+    }
+
+    public int getPartidasEvaluadas() {
+        return partidasEvaluadas;
+    }
+    
     public List<Partida> getGames() {
         return games;
     }
